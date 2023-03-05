@@ -6,5 +6,5 @@ export function mult(a:number,b:number) {
 }
 
 export function splitwords(sent: string){
-    return sent.toLowerCase().split(" ").map;
+    return sent.split(" ");
 }

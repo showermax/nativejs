@@ -19,7 +19,7 @@ test('correct splitting', ()=> {
     const sent2="nothing more but love";
 
     const result1 = splitwords(sent1);
-    const result2 = splitwords(sent2);
+    //const result2 = splitwords(sent2);
 
     expect(result1[0]).toBe("hello");
     expect(result1[1]).toBe("my");
