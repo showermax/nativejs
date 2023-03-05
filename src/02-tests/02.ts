@@ -1,8 +1,28 @@
-export const student = {
+type CityType = {
+    country: string
+    cityName: string
+}
+ type AddressType = {
+    city: CityType
+     street: string
+ }
+ type TechType ={
+    id: number
+     techName: string
+ }
+ type StudentType = {
+    id: number
+     name: string
+     age: 36
+     address: AddressType
+     technologies: Array<TechType>
+
+ }
+export const student: StudentType = {
     id: 1,
     name: "Max",
     age: 36,
-    adress: {
+    address: {
         city:{
             country: "Belarus",
             cityName: "Minsk"
