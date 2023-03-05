@@ -4,3 +4,7 @@ return a+b;
 export function mult(a:number,b:number) {
     return a*b;
 }
+
+export function splitwords(sent: string){
+    return sent.toLowerCase().split(" ").map;
+}
