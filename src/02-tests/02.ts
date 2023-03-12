@@ -2,44 +2,44 @@ type CityType = {
     country: string
     cityName: string
 }
- type AddressType = {
+type AddressType = {
     city: CityType
-     street: string
- }
- type TechType ={
+    street: string
+}
+type TechType = {
     id: number
-     techName: string
- }
- type StudentType = {
+    techName: string
+}
+type StudentType = {
     id: number
-     name: string
-     age: 36
-     address: AddressType
-     technologies: Array<TechType>
+    name: string
+    age: number
+    address: AddressType
+    technologies: Array<TechType>
 
- }
+}
 export const student: StudentType = {
     id: 1,
     name: "Max",
     age: 36,
     address: {
-        city:{
+        city: {
             country: "Belarus",
             cityName: "Minsk"
         },
         street: "Fedorova"
     },
-    technologies:[
+    technologies: [
         {
-            id:1,
+            id: 1,
             techName: "CSS"
         },
         {
-            id:2,
+            id: 2,
             techName: "Js"
         },
         {
-            id:3,
+            id: 3,
             techName: "React"
         }
     ]
