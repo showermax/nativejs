@@ -44,3 +44,7 @@ export const student: StudentType = {
         }
     ]
 }
+
+function concat (student: StudentType) {
+    return `Hello ${student.name}, the man!`
+}
